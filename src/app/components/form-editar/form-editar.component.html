@@ -1,0 +1,10 @@
+<div class="container w-25 mt-5 d-flex align-content-start justify-content-start flex-column ">
+
+  <label for="name">Nombre: </label>
+  <input id="name" class="form-control " type="text" [formControl]="name">
+  <p class="mt-5">Valor: {{ name.value }}</p>
+
+  <button class="btn btn-success " type="button" (click)="updateName()">Actualizar boton</button>
+
+
+</div>

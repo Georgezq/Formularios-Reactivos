@@ -7,7 +7,7 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
   imports: [ReactiveFormsModule],
   templateUrl: './form-editar.component.html',
   styleUrl: './form-editar.component.css'
-  
+
 })
 export class FormEditarComponent {
 
@@ -15,12 +15,9 @@ export class FormEditarComponent {
 
   @Input() newName: string;
 
-
-
   updateName() {
     this.name.setValue(this.newName);
   }
-
 
 
 }
